@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon Jun  2 12:38:27 2025
+# Process ID         : 3532
+# Current directory  : C:/Ali/Facultate/DSD/Timer/v2_nexys/v2_nexys.runs/impl_1
+# Command line       : vivado.exe -log high.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source high.tcl -notrace
+# Log file           : C:/Ali/Facultate/DSD/Timer/v2_nexys/v2_nexys.runs/impl_1/high.vdi
+# Journal file       : C:/Ali/Facultate/DSD/Timer/v2_nexys/v2_nexys.runs/impl_1\vivado.jou
+# Running On         : Exoarc
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 34070 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36217 MB
+# Available Virtual  : 23157 MB
+#-----------------------------------------------------------
+source high.tcl -notrace

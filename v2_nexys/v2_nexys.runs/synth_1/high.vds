@@ -1,0 +1,305 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon Jun  2 12:36:51 2025
+# Process ID         : 17200
+# Current directory  : C:/Ali/Facultate/DSD/Timer/v2_nexys/v2_nexys.runs/synth_1
+# Command line       : vivado.exe -log high.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source high.tcl
+# Log file           : C:/Ali/Facultate/DSD/Timer/v2_nexys/v2_nexys.runs/synth_1/high.vds
+# Journal file       : C:/Ali/Facultate/DSD/Timer/v2_nexys/v2_nexys.runs/synth_1\vivado.jou
+# Running On         : Exoarc
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 34070 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36217 MB
+# Available Virtual  : 22873 MB
+#-----------------------------------------------------------
+source high.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Ali/Facultate/DSD/Timer/v2_nexys/v2_nexys.srcs/utils_1/imports/synth_1/high.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Ali/Facultate/DSD/Timer/v2_nexys/v2_nexys.srcs/utils_1/imports/synth_1/high.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top high -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13304
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1046.148 ; gain = 469.480
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'high' [C:/Ali/Facultate/DSD/Timer/v2_nexys/high.vhd:46]
+INFO: [Synth 8-3491] module 'EU' declared at 'C:/Ali/Facultate/DSD/Timer/v2_nexys/EU_v1.vhd:5' bound to instance 'l1' of component 'EU' [C:/Ali/Facultate/DSD/Timer/v2_nexys/high.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'EU' [C:/Ali/Facultate/DSD/Timer/v2_nexys/EU_v1.vhd:22]
+INFO: [Synth 8-3491] module 'clk1hz' declared at 'C:/Ali/Facultate/DSD/Timer/v2_nexys/clk1hz.vhd:35' bound to instance 'clk1' of component 'clk1hz' [C:/Ali/Facultate/DSD/Timer/v2_nexys/EU_v1.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'clk1hz' [C:/Ali/Facultate/DSD/Timer/v2_nexys/clk1hz.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'clk1hz' (0#1) [C:/Ali/Facultate/DSD/Timer/v2_nexys/clk1hz.vhd:40]
+INFO: [Synth 8-3491] module 'cnt_0_9' declared at 'C:/Ali/Facultate/DSD/Timer/v2_nexys/cnt_0_9.vhd:5' bound to instance 'counter_us' of component 'cnt_0_9' [C:/Ali/Facultate/DSD/Timer/v2_nexys/EU_v1.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'cnt_0_9' [C:/Ali/Facultate/DSD/Timer/v2_nexys/cnt_0_9.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'cnt_0_9' (0#1) [C:/Ali/Facultate/DSD/Timer/v2_nexys/cnt_0_9.vhd:17]
+INFO: [Synth 8-3491] module 'cnt_0_5' declared at 'C:/Ali/Facultate/DSD/Timer/v2_nexys/counter_de_la_0_la_5.vhd:5' bound to instance 'counter_zs' of component 'cnt_0_5' [C:/Ali/Facultate/DSD/Timer/v2_nexys/EU_v1.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'cnt_0_5' [C:/Ali/Facultate/DSD/Timer/v2_nexys/counter_de_la_0_la_5.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'cnt_0_5' (0#1) [C:/Ali/Facultate/DSD/Timer/v2_nexys/counter_de_la_0_la_5.vhd:17]
+INFO: [Synth 8-3491] module 'cnt_0_9' declared at 'C:/Ali/Facultate/DSD/Timer/v2_nexys/cnt_0_9.vhd:5' bound to instance 'counter_um' of component 'cnt_0_9' [C:/Ali/Facultate/DSD/Timer/v2_nexys/EU_v1.vhd:103]
+INFO: [Synth 8-3491] module 'cnt_0_9' declared at 'C:/Ali/Facultate/DSD/Timer/v2_nexys/cnt_0_9.vhd:5' bound to instance 'counter_zm' of component 'cnt_0_9' [C:/Ali/Facultate/DSD/Timer/v2_nexys/EU_v1.vhd:104]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Ali/Facultate/DSD/Timer/v2_nexys/dff.vhd:34' bound to instance 'dff_for_alarm' of component 'dff' [C:/Ali/Facultate/DSD/Timer/v2_nexys/EU_v1.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'dff' [C:/Ali/Facultate/DSD/Timer/v2_nexys/dff.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'dff' (0#1) [C:/Ali/Facultate/DSD/Timer/v2_nexys/dff.vhd:42]
+INFO: [Synth 8-3491] module 'cnt_0_9' declared at 'C:/Ali/Facultate/DSD/Timer/v2_nexys/cnt_0_9.vhd:5' bound to instance 'counter_alarm' of component 'cnt_0_9' [C:/Ali/Facultate/DSD/Timer/v2_nexys/EU_v1.vhd:107]
+INFO: [Synth 8-3491] module 'ssd_display_4_with_included_decoder' declared at 'C:/Ali/Facultate/DSD/Timer/v2_nexys/ssd_display_4_with_included_decoder.vhd:3' bound to instance 'display' of component 'ssd_display_4_with_included_decoder' [C:/Ali/Facultate/DSD/Timer/v2_nexys/EU_v1.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'ssd_display_4_with_included_decoder' [C:/Ali/Facultate/DSD/Timer/v2_nexys/ssd_display_4_with_included_decoder.vhd:15]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Ali/Facultate/DSD/Timer/v2_nexys/decodificator.vhd:13' bound to instance 'd1' of component 'decoder' [C:/Ali/Facultate/DSD/Timer/v2_nexys/ssd_display_4_with_included_decoder.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'decoder' [C:/Ali/Facultate/DSD/Timer/v2_nexys/decodificator.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'decoder' (0#1) [C:/Ali/Facultate/DSD/Timer/v2_nexys/decodificator.vhd:20]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Ali/Facultate/DSD/Timer/v2_nexys/decodificator.vhd:13' bound to instance 'd2' of component 'decoder' [C:/Ali/Facultate/DSD/Timer/v2_nexys/ssd_display_4_with_included_decoder.vhd:44]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Ali/Facultate/DSD/Timer/v2_nexys/decodificator.vhd:13' bound to instance 'd3' of component 'decoder' [C:/Ali/Facultate/DSD/Timer/v2_nexys/ssd_display_4_with_included_decoder.vhd:45]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Ali/Facultate/DSD/Timer/v2_nexys/decodificator.vhd:13' bound to instance 'd4' of component 'decoder' [C:/Ali/Facultate/DSD/Timer/v2_nexys/ssd_display_4_with_included_decoder.vhd:46]
+INFO: [Synth 8-3491] module 'display_4_ssd' declared at 'C:/Ali/Facultate/DSD/Timer/v2_nexys/ssd.vhd:8' bound to instance 'ssd' of component 'display_4_ssd' [C:/Ali/Facultate/DSD/Timer/v2_nexys/ssd_display_4_with_included_decoder.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'display_4_ssd' [C:/Ali/Facultate/DSD/Timer/v2_nexys/ssd.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'display_4_ssd' (0#1) [C:/Ali/Facultate/DSD/Timer/v2_nexys/ssd.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'ssd_display_4_with_included_decoder' (0#1) [C:/Ali/Facultate/DSD/Timer/v2_nexys/ssd_display_4_with_included_decoder.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'EU' (0#1) [C:/Ali/Facultate/DSD/Timer/v2_nexys/EU_v1.vhd:22]
+INFO: [Synth 8-3491] module 'CU' declared at 'C:/Ali/Facultate/DSD/Timer/v2_nexys/CU.vhd:34' bound to instance 'l2' of component 'CU' [C:/Ali/Facultate/DSD/Timer/v2_nexys/high.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'CU' [C:/Ali/Facultate/DSD/Timer/v2_nexys/CU.vhd:53]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'C:/Ali/Facultate/DSD/Timer/v2_nexys/dbouncer.vhd:5' bound to instance 'db1' of component 'debouncer' [C:/Ali/Facultate/DSD/Timer/v2_nexys/CU.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'debouncer' [C:/Ali/Facultate/DSD/Timer/v2_nexys/dbouncer.vhd:11]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Ali/Facultate/DSD/Timer/v2_nexys/dff.vhd:34' bound to instance 'd1' of component 'dff' [C:/Ali/Facultate/DSD/Timer/v2_nexys/dbouncer.vhd:37]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Ali/Facultate/DSD/Timer/v2_nexys/dff.vhd:34' bound to instance 'd2' of component 'dff' [C:/Ali/Facultate/DSD/Timer/v2_nexys/dbouncer.vhd:38]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Ali/Facultate/DSD/Timer/v2_nexys/dff.vhd:34' bound to instance 'd3' of component 'dff' [C:/Ali/Facultate/DSD/Timer/v2_nexys/dbouncer.vhd:39]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Ali/Facultate/DSD/Timer/v2_nexys/dff.vhd:34' bound to instance 'd4' of component 'dff' [C:/Ali/Facultate/DSD/Timer/v2_nexys/dbouncer.vhd:40]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Ali/Facultate/DSD/Timer/v2_nexys/dff.vhd:34' bound to instance 'd5' of component 'dff' [C:/Ali/Facultate/DSD/Timer/v2_nexys/dbouncer.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (0#1) [C:/Ali/Facultate/DSD/Timer/v2_nexys/dbouncer.vhd:11]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'C:/Ali/Facultate/DSD/Timer/v2_nexys/dbouncer.vhd:5' bound to instance 'db2' of component 'debouncer' [C:/Ali/Facultate/DSD/Timer/v2_nexys/CU.vhd:87]
+INFO: [Synth 8-3491] module 'debouncer_special' declared at 'C:/Ali/Facultate/DSD/Timer/v2_nexys/debouncer_special.vhd:5' bound to instance 'db_special1' of component 'debouncer_special' [C:/Ali/Facultate/DSD/Timer/v2_nexys/CU.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'debouncer_special' [C:/Ali/Facultate/DSD/Timer/v2_nexys/debouncer_special.vhd:11]
+WARNING: [Synth 8-614] signal 'state' is read in the process but is not in the sensitivity list [C:/Ali/Facultate/DSD/Timer/v2_nexys/debouncer_special.vhd:101]
+INFO: [Synth 8-256] done synthesizing module 'debouncer_special' (0#1) [C:/Ali/Facultate/DSD/Timer/v2_nexys/debouncer_special.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'CU' (0#1) [C:/Ali/Facultate/DSD/Timer/v2_nexys/CU.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'high' (0#1) [C:/Ali/Facultate/DSD/Timer/v2_nexys/high.vhd:46]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1153.488 ; gain = 576.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1153.488 ; gain = 576.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1153.488 ; gain = 576.820
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1153.488 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Ali/Facultate/DSD/Timer/v2_nexys/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [C:/Ali/Facultate/DSD/Timer/v2_nexys/Nexys-4-DDR-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Ali/Facultate/DSD/Timer/v2_nexys/Nexys-4-DDR-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/high_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/high_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1240.715 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1240.715 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1240.715 ; gain = 664.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1240.715 ; gain = 664.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1240.715 ; gain = 664.047
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'state_reg' [C:/Ali/Facultate/DSD/Timer/v2_nexys/debouncer_special.vhd:92]
+WARNING: [Synth 8-327] inferring latch for variable 'nextstate_reg' [C:/Ali/Facultate/DSD/Timer/v2_nexys/CU.vhd:118]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1240.715 ; gain = 664.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   4 Input    4 Bit        Muxes := 5     
+	   2 Input    4 Bit        Muxes := 12    
+	   2 Input    3 Bit        Muxes := 10    
+	   4 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 7     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 7     
+	   4 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design high has port an[0] driven by constant 1
+WARNING: [Synth 8-3917] design high has port an[1] driven by constant 1
+WARNING: [Synth 8-3917] design high has port an[2] driven by constant 1
+WARNING: [Synth 8-3917] design high has port an[3] driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1240.715 ; gain = 664.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1343.613 ; gain = 766.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1343.836 ; gain = 767.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1372.473 ; gain = 795.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1570.145 ; gain = 993.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1570.145 ; gain = 993.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1570.145 ; gain = 993.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1570.145 ; gain = 993.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1570.145 ; gain = 993.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1570.145 ; gain = 993.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    22|
+|3     |LUT1   |     5|
+|4     |LUT2   |    12|
+|5     |LUT3   |    10|
+|6     |LUT4   |    14|
+|7     |LUT5   |    16|
+|8     |LUT6   |    54|
+|9     |FDRE   |   114|
+|10    |FDSE   |     1|
+|11    |LD     |     3|
+|12    |LDP    |     1|
+|13    |IBUF   |     4|
+|14    |OBUF   |    16|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1570.145 ; gain = 993.477
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 1570.145 ; gain = 906.250
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1570.145 ; gain = 993.477
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1579.332 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1582.961 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  LD => LDCE: 3 instances
+  LDP => LDPE: 1 instance 
+
+Synth Design complete | Checksum: 166e00e5
+INFO: [Common 17-83] Releasing license: Synthesis
+68 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1582.961 ; gain = 1212.078
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1582.961 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Ali/Facultate/DSD/Timer/v2_nexys/v2_nexys.runs/synth_1/high.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file high_utilization_synth.rpt -pb high_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun  2 12:37:16 2025...
